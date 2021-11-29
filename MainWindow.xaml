@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPFProdect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProdect"
+        mc:Ignorable="d"
+        Title="Text" Height="504" Width="760">
+    <Grid x:Name="main" RenderTransformOrigin="0.517,0.569">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" x:Name="Text" Text="66666"/>
+        <Button Grid.Row="0" Grid.Column="1" Click="Add">додати в масив</Button>
+        <Button Grid.Row="1" Grid.Column="0" Click="Submit" >порахувати</Button>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Максимальне значення" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.262,0.47" Grid.ColumnSpan="2"/>
+        <TextBlock  Grid.Column="3" HorizontalAlignment="Left" Margin="15,13,0,0" TextWrapping="Wrap" Text="Мінімальне зачення" VerticalAlignment="Top" Width="80"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left" Margin="3,13,0,0" TextWrapping="Wrap" Text="Непарні числа" VerticalAlignment="Top" Width="79" RenderTransformOrigin="0.506,1.719"/>
+        <TextBlock  Grid.Column="5" HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="Середнє арифметичне" VerticalAlignment="Top" RenderTransformOrigin="0.245,0.062" Width="78"/>
+        <TextBlock  Grid.Column="6" HorizontalAlignment="Left" Margin="19,13,0,0" TextWrapping="Wrap" Text="Сума" VerticalAlignment="Top" RenderTransformOrigin="0.245,0.062" Width="78"/>
+        <TextBlock x:Name="MaxValue" Grid.Column="2" HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-0.262,0.47" Height="32"/>
+        <TextBlock x:Name="Sum" Grid.Column="6" HorizontalAlignment="Left" Margin="10,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.245,0.062" Width="87" Height="51"/>
+        <TextBlock x:Name="MinValue" Grid.Column="3" HorizontalAlignment="Left" Margin="18,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <TextBlock x:Name="mediumNumber" Grid.Column="5" HorizontalAlignment="Left" Margin="10,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.245,0.062" Width="78"/>
+        <TextBlock x:Name="OddNumbers" Grid.Column="4" HorizontalAlignment="Left" Margin="3,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" RenderTransformOrigin="0.506,1.719" Height="45"/>
+    </Grid>
+</Window>
